@@ -1,0 +1,621 @@
+{
+  "appName": "FinArm",
+
+  "nav": {
+    "dashboard": "Գլխավոր",
+    "transactions": "Գործարքներ",
+    "income": "Եկամուտ",
+    "expenses": "Ծախսեր",
+    "accounts": "Հաշիվներ",
+    "budgets": "Բյուջե",
+    "goals": "Նպատակներ",
+    "reports": "Հաշվետվություններ",
+    "notifications": "Ծանուցումներ",
+    "settings": "Կարգավորումներ",
+    "profile": "Իմ հաշիվը",
+    "admin": "Ադմին",
+    "logout": "Ելք"
+  },
+
+  "auth": {
+    "login": "Մուտք",
+    "register": "Գրանցում",
+    "emailOrPhone": "Էլ. փոստ կամ հեռախոսահամար",
+    "password": "Գաղտնաբառ",
+    "confirmPassword": "Հաստատել գաղտնաբառը",
+    "submit": "Ուղարկել",
+    "logoutSuccess": "Ելքը հաջողությամբ կատարվեց",
+    "invalidCredentials": "Սխալ մուտքային տվյալներ",
+    "required": "Պարտադիր դաշտ",
+    "passwordMismatch": "Գաղտնաբառերը չեն համընկնում",
+    "minPassword": "Գաղտնաբառը պետք է լինի առնվազն 6 նիշ",
+    "name": "Անուն",
+    "serverUnavailable": "Չհաջողվեց միանալ սերվերին։ Կրկնեք ավելի ուշ։",
+    "unknownError": "Անհայտ սխալ։ Կրկնեք փորձը։",
+    "registrationFailed": "Գրանցումը ձախողվեց։ Կրկնեք փորձը։",
+    "loginSubtitle": "Մուտք գործեք ձեր ֆինանսները կառավարելու համար",
+    "registerSubtitle": "Ստեղծեք անվճար հաշիվ և կառավարեք ձեր գումարը",
+    "noAccount": "Հաշիվ չունե՞ք։",
+    "haveAccount": "Արդեն հաշիվ ունե՞ք։",
+    "signIn": "Մուտք",
+    "createAccount": "Ստեղծել հաշիվ",
+    "emailPlaceholder": "your@email.com",
+    "phonePlaceholder": "+374 XX XXX XXX",
+    "passwordPlaceholder": "Առնվազն 6 նիշ",
+    "namePlaceholder": "Ձեր անունը",
+    "orSeparator": "կամ"
+  },
+
+  "header": {
+    "language": "Լեզու",
+    "switcher": "Լեզվի ընտրություն"
+  },
+
+  "dashboard": {
+  "welcome": "Բարի գալուստ, {{name}}",
+  "totalBalance": "Ընդհանուր մնացորդ",
+  "dashboardSubtitle": "Վերահսկիր քո գումարները, ակտիվությունը և նպատակները մեկ վայրում։",
+
+  "recentTransactions": "Վերջին գործարքներ",
+  "recentTransactionsSubtitle": "Քո վերջին ֆինանսական ակտիվությունը։",
+
+  "quickActions": "Արագ գործողություններ",
+  "quickActionsSubtitle": "Արագ անցում քո ամենահաճախ օգտագործվող գործողություններին։",
+
+  "income": "Եկամուտ",
+  "expense": "Ծախս",
+  "savings": "Խնայողություններ",
+
+  "addIncome": "Ավելացնել եկամուտ",
+  "addExpense": "Ավելացնել ծախս",
+  "transfer": "Փոխանցում",
+  "createBudget": "Ստեղծել բյուջե",
+
+  "accountsOverview": "Հաշիվների ընդհանուր տեսք",
+  "accountsOverviewSubtitle": "Մի հայացքով տես քո հաշիվների մնացորդները։",
+  "noAccounts": "Հաշիվներ չկան",
+
+  "noTransactions": "Գործարքներ դեռ չկան",
+  "uncategorized": "Առանց կատեգորիայի",
+
+  "cashFlowOverview": "Եկամուտ / Ծախս պատկեր",
+  "cashFlowOverviewSubtitle": "Արագ համեմատություն քո եկամուտների և ծախսերի միջև։",
+
+  "topCategories": "Ծախսերի հիմնական կատեգորիաներ",
+  "topCategoriesSubtitle": "Տես, թե որ կատեգորիաների վրա ես ամենաշատը ծախսում։",
+
+  "noExpenseData": "Ծախսերի տվյալներ չկան",
+
+  "goalsProgress": "Նպատակների առաջընթաց",
+  "goalsProgressSubtitle": "Տես, թե որքան մոտ ես քո խնայողական նպատակներին։",
+  "noGoals": "Նպատակներ չկան",
+
+  "budgetSummary": "Բյուջեի ամփոփում",
+  "budgetSummarySubtitle": "Վերահսկիր, թե ինչպես են օգտագործվում քո բյուջեները։",
+  "noBudgets": "Բյուջեներ չկան"
+},
+"admin": {
+  "title": "Ադմին պանել",
+  "subtitle": "Կառավարեք օգտատերերին, գործարքները, բյուջեները և համակարգի ակտիվությունը",
+  "searchPlaceholder": "Որոնել...",
+
+  "menu": {
+    "dashboard": "Գլխավոր",
+    "users": "Օգտատերեր",
+    "accounts": "Հաշիվներ",
+    "transactions": "Գործարքներ",
+    "budgets": "Բյուջեներ",
+    "goals": "Նպատակներ",
+    "categories": "Կատեգորիաներ",
+    "notifications": "Ծանուցումներ",
+    "reports": "Հաշվետվություններ",
+    "settings": "Կարգավորումներ",
+    "logs": "Լոգեր"
+  },
+
+  "stats": {
+    "totalUsers": "Ընդհանուր օգտատերեր",
+    "activeUsers": "Ակտիվ օգտատերեր",
+    "transactions": "Գործարքներ",
+    "totalExpense": "Ընդհանուր ծախս"
+  },
+
+  "recentUsers": "Վերջին օգտատերեր",
+  "recentTransactions": "Վերջին գործարքներ",
+  "viewAll": "Դիտել բոլորը",
+  "exportCsv": "Արտահանել CSV",
+
+  "systemSummary": "Համակարգի ամփոփում",
+  "summary": {
+    "budgetsWarning": "Նախազգուշացման գոտում գտնվող բյուջեներ",
+    "overspentBudgets": "Գերազանցված բյուջեներ",
+    "pendingNotifications": "Սպասող ծանուցումներ",
+    "failedLogins": "Մուտքի ձախողված փորձեր"
+  },
+
+  "table": {
+    "name": "Անուն",
+    "email": "Էլ. հասցե",
+    "status": "Կարգավիճակ",
+    "joined": "Գրանցվել է",
+    "user": "Օգտատեր",
+    "type": "Տեսակ",
+    "category": "Կատեգորիա",
+    "amount": "Գումար",
+    "date": "Ամսաթիվ",
+    "currency": "Արժույթ",
+    "actions": "Գործողություններ",
+    "phone": "Հեռախոս",
+    "role": "Դեր",
+    "transactions": "Գործարքներ",
+    "income": "Եկամուտ",
+    "expense": "Ծախս"
+  },
+
+  "status": {
+    "active": "Ակտիվ",
+    "blocked": "Արգելափակված",
+    "income": "Եկամուտ",
+    "expense": "Ծախս"
+  },
+
+  "actions": {
+    "add": "Ավելացնել",
+    "edit": "Խմբագրել",
+    "delete": "Ջնջել",
+    "block": "Արգելափակել",
+    "unblock": "Ապաարգելափակել"
+  },
+
+  "empty": {
+    "noUsers": "Օգտատերեր չեն գտնվել",
+    "noTransactions": "Գործարքներ չկան"
+  },
+
+  "usersPage": {
+    "title": "Օգտատերերի կառավարում",
+    "subtitle": "Դիտեք, որոնեք և կառավարեք հարթակի օգտատերերին",
+    "addUser": "Ավելացնել օգտատեր",
+    "searchPlaceholder": "Որոնել անունով կամ էլ. հասցեով...",
+
+    "filters": {
+      "allStatuses": "Բոլոր կարգավիճակները"
+    },
+
+    "stats": {
+      "totalUsers": "Ընդհանուր օգտատերեր",
+      "activeUsers": "Ակտիվ օգտատերեր",
+      "blockedUsers": "Արգելափակված օգտատերեր"
+    },
+
+    "table": {
+      "role": "Դեր",
+      "actions": "Գործողություններ"
+    },
+
+    "roles": {
+      "admin": "Ադմին",
+      "user": "Օգտատեր"
+    }
+  },
+
+  "loading": "Բեռնվում է...",
+  "comingSoon": "Շուտով",
+  "unknown": "Անհայտ",
+  "total": "{{count}} ընդհանուր",
+  "ofUsers": "{{filtered}} / {{total}} օգտատեր",
+  "revenueSummary": "Եկամուտների ամփոփ",
+  "totalRevenue": "Ընդհանուր եկամուտ",
+  "totalIncome": "Ընդհանուր մուտք",
+  "totalExpensesLabel": "Ընդհանուր ծախս",
+  "netBalance": "Զուտ մնացորդ",
+  "allRoles": "Բոլոր դերերը",
+  "makeAdmin": "Ադմին դարձնել",
+  "revokeAdmin": "Ադմինի իրավունք հանել",
+  "phone": "Հեռախոս",
+  "noExpenseData": "Ծախսերի տվյալ չկա",
+  "byCurrency": "Ըստ արժույթի",
+  "noData": "Տվյալ չկա",
+  "topExpenseCategories": "Ծախսերի հիմնական կատեգորիաները",
+  "activityLog": "Ակտիվության մատյան",
+  "systemInfo": "Համակարգի տեղեկատվություն",
+  "userActivity": "Օգտատերի ակտիվություն",
+  "deleteUserConfirm": "Ջնջե՞լ «{{name}}» օգտատերը։ Գործողությունն անհնար է հետ կանչել։",
+  "failedUpdateRole": "Դերի փոփոխությունը ձախողվեց",
+  "failedDeleteUser": "Օգտատերի ջնջումն ձախողվեց",
+  "noUsersFound": "Օգտատերեր չեն գտնվել",
+  "noUsers": "Օգտատերեր չկան",
+  "noTransactionsData": "Գործարքներ չկան",
+  "income": "Եկամուտ",
+  "expense": "Ծախս",
+  "transfer": "Փոխանցում",
+  "version": "Տարբերակ",
+  "environment": "Միջավայր",
+  "database": "Տվյալների բազա",
+  "connected": "Կապակցված",
+  "systemStatus": "Համակարգի կարգավիճակ",
+  "operational": "Աշխատում է",
+  "transactionsPerUser": "Գործարք մեկ օգտատերի համար",
+  "financialActivity": "Ֆինանսական ակտիվություն",
+  "categoryStats": "Կատեգորիաների վիճակագրություն",
+  "recentActivity": "Վերջին ակտիվությունը",
+  "allCategories": "Բոլոր կատեգորիաները",
+  "role": "Դեր"
+},
+  "accounts": {
+  "title": "Հաշիվներ",
+  "add": "Ավելացնել հաշիվ",
+  "name": "Անվանում",
+  "type": "Տեսակ",
+  "balance": "Մնացորդ",
+  "currency": "Արժույթ",
+  "transfer": "Փոխանցում",
+  "from": "Որտեղից",
+  "to": "Որտեղ",
+  "amount": "Գումար",
+  "creditLimit": "Վարկային սահմանաչափ",
+  "description": "Կառավարեք ձեր դրամապանակները, քարտերը և բանկային հաշիվները մեկ վայրում",
+  "overview": "Ձեր գումարի հստակ պատկերացում",
+  "addDescription": "Ավելացրեք նոր դրամապանակ, քարտ կամ բանկային հաշիվ",
+  "transferDescription": "Փոխանցեք գումար ձեր հաշիվների միջև",
+  "selectSource": "Ընտրեք աղբյուր հաշիվը",
+  "selectDestination": "Ընտրեք նպատակային հաշիվը",
+  "addMinAccounts": "Ավելացրեք առնվազն 2 հաշիվ փոխանցման համար",
+  "added": "Հաշիվը հաջողությամբ ավելացվեց",
+  "addError": "Չհաջողվեց ավելացնել հաշիվը",
+  "transferSuccess": "Փոխանցումը հաջողությամբ կատարվեց",
+  "transferError": "Չհաջողվեց կատարել փոխանցումը",
+  "totalAccounts": "Ընդհանուր հաշիվներ",
+  "mainCurrencyBalance": "Հիմնական արժույթի մնացորդ",
+  "creditAccounts": "Վարկային հաշիվներ",
+  "accountType": "Հաշվի տեսակ",
+  "yourAccounts": "Ձեր հաշիվները",
+  "accountsSubtitle": "Ձեր մնացորդների արագ դիտարկում",
+  "noAccountsYet": "Դեռ հաշիվներ չկան",
+  "createFirstAccount": "Ստեղծեք ձեր առաջին հաշիվը՝ գումարների հաշվառումը սկսելու համար",
+  "namePlaceholder": "Իմ աշխատավարձային քարտը",
+  "balancePlaceholder": "0.00",
+  "amountPlaceholder": "0.00",
+  "cashWallet": "Կանխիկ դրամապանակ",
+  "bankAccount": "Բանկային հաշիվ",
+  "debitCard": "Դեբետ քարտ",
+  "creditCard": "Կրեդիտ քարտ",
+  "savingsAccount": "Խնայողական հաշիվ",
+  "heroLabel": "Ֆինանսական հաշիվներ",
+  "active": "Ակտիվ",
+  "defaultAccountName": "Նոր հաշիվ",
+  "subtitle": "Կառավարեք ձեր ֆինանսական հաշիվները",
+  "created": "Հաշիվն ավելացվեց",
+  "createError": "Չհաջողվեց ավելացնել հաշիվը",
+  "updated": "Փոփոխությունները պահպանվեցին",
+  "updateError": "Չhաաջողվեց պահպանել",
+  "deleted": "Հաշիվը ջնջվեց",
+  "deleteError": "Չհաջողվեց ջնջել",
+  "deleteConfirm": "Վստա՞հ եք, որ ուզում եք ջնջել հաշիվը",
+  "archived": "Արխիվ",
+  "archiveError": "Չհաջողվեց",
+  "unarchived": "Հաշիվը վերականգնվեց",
+  "transferFailed": "Չհաջողվեց",
+  "transferNeedTwo": "Փոխանցման համար պետք է լինի առնվազն 2 ակտիվ հաշիվ",
+  "addAccount": "Ավելացնել հաշիվ",
+  "noAccounts": "Հաշիվներ չկան",
+  "initialBalance": "Մնացորդ",
+  "limit": "Սահմանաչափ",
+  "edit": "Խմբագրել",
+  "archive": "Արխիվ",
+  "archivedAccounts": "Արխիվ",
+  "unarchive": "Վերականգնել",
+  "editAccount": "Խմբագրել հաշիվը",
+  "cancel": "Չեղարկել",
+  "save": "Պահպանել",
+  "selectAccount": "Ընտրել հաշիվ",
+  "deleteHasTransactions": "Հնարավոր չէ ջնջել հաշիվը, որտեղ կան կապված գործարքներ"
+},
+
+  "transactions": {
+  "title": "Գործարքներ",
+  "subtitle": "Կառավարեք ձեր եկամուտներն ու ծախսերը մեկ վայրից։",
+
+  "income": "Եկամուտ",
+  "expense": "Ծախս",
+  "transfer": "Տրանսֆեր",
+
+  "balance": "Մնացորդ",
+
+  "addIncome": "Ավելացնել եկամուտ",
+  "addExpense": "Ավելացնել ծախս",
+
+  "type": "Տեսակ",
+  "all": "Բոլորը",
+
+  "startDate": "Սկիզբ",
+  "endDate": "Ավարտ",
+
+  "reset": "Վերականգնել",
+
+  "date": "Ամսաթիվ",
+  "category": "Կատեգորիա",
+  "amount": "Գումար",
+  "currency": "Արժույթ",
+  "actions": "Գործողություններ",
+
+  "edit": "Խմբագրել",
+  "delete": "Ջնջել",
+
+  "editTransaction": "Թարմացնել գործարքը",
+  "newTransaction": "Նոր գործարք",
+
+  "save": "Պահպանել",
+  "update": "Թարմացնել",
+  "close": "Փակել",
+
+  "fillRequired": "Լրացրեք բոլոր պարտադիր դաշտերը",
+  "amountInvalid": "Գումարը պետք է լինի 0-ից մեծ և վավեր թիվ",
+
+  "created": "Գործարքը ավելացվեց",
+  "updated": "Գործարքը թարմացվեց",
+  "deleted": "Գործարքը ջնջվեց",
+
+  "saveError": "Չհաջողվեց պահպանել",
+  "deleteError": "Չհաջողվեց ջնջել",
+
+  "deleteConfirm": "Վստա՞հ եք, որ ուզում եք ջնջել գործարքը։",
+
+  "noTransactions": "Գործարքներ չկան",
+  "noTransactionsDescription": "Ավելացրեք ձեր առաջին գործարքը",
+
+  "uncategorized": "Առանց կատեգորիայի",
+
+  "amountPlaceholder": "Մուտքագրեք գումարը",
+  "categoryPlaceholder": "Օր. Սնունդ, Տրանսպորտ, Աշխատավարձ"
+},
+
+  "income": {
+    "addIncome": "Ավելացնել եկամուտ",
+    "source": "Աղբյուր",
+    "recurring": "Կրկնվող (ամսական)",
+    "history": "Եկամուտների պատմություն"
+  },
+
+  "expenses": {
+    "quickAdd": "Արագ ավելացնել ծախս",
+    "category": "Կատեգորիա",
+    "mandatory": "Պարտադիր",
+    "optional": "Ընտրովի",
+    "blocked": "Արգելված է․ ամսական ծախսերը կգերազանցեն հասանելի մնացորդը",
+    "budgetExceeded": "Բյուջեն գերազանցվել է",
+    "saved": "Ծախսը պահպանվել է",
+    "selectAccount": "Ընտրել հաշիվ",
+    "amount": "Գումար"
+  },
+
+  "budgets": {
+  "title": "Բյուջե",
+  "monthlyTotal": "Ամսական ընդհանուր բյուջե",
+  "categoryBudgets": "Բյուջե ըստ կատեգորիաների",
+  "description": "Վերահսկեք ձեր ծախսերը տեսնելով բյուջեի ընթացիկ վիճակը",
+  "overview": "Բյուջեների ընդհանուր պատկեր",
+  "createBudget": "Ստեղծել բյուջե",
+  "createDescription": "Ընտրեք ժամանակահատված, կատեգորիա և սահմանաչափ",
+  "created": "Բյուջեն հաջողությամբ ստեղծվեց",
+  "createError": "Չհաջողվեց ստեղծել բյուջեն",
+  "createFunctionMissing": "Store-ում createBudget ֆունկցիան բացակայում է",
+  "fillRequired": "Լրացրեք բոլոր պարտադիր դաշտերը",
+  "period": "Ժամանակահատված",
+  "category": "Կատեգորիա",
+  "selectCategory": "Ընտրեք կատեգորիան",
+  "currency": "Արժույթ",
+  "limit": "Սահմանաչափ",
+  "spent": "Ծախսվել է",
+  "remaining": "Մնացել է",
+  "usedPercent": "Օգտագործված",
+  "warning": "Նախազգուշացում",
+  "overspent": "Գերազանցված",
+  "onTrack": "Նորմայի մեջ",
+  "totalSpent": "Ընդհանուր ծախսված",
+  "warningCount": "80%-ի հասած բյուջեներ",
+  "overspentCount": "100%+-ից անցած բյուջեներ",
+  "sectionSubtitle": "Յուրաքանչյուր բյուջեի ընթացիկ առաջընթացը",
+  "emptyDescription": "Ստեղծեք բյուջեներ, որպեսզի վերահսկեք ծախսերը ըստ կատեգորիաների",
+  "overBy": "Գերազանցվել է {{amount}} {{currency}}-ով",
+  "selectedCategoryPreview": "Ընտրված կատեգորիա",
+  "monthly": "Ամսական",
+  "weekly": "Շաբաթական",
+  "yearly": "Տարեկան",
+  "totalLimit": "Ընդհանուր սահմանաչափ",
+  "add": "Ավելացնել",
+  "cancel": "Չեղարկել",
+  "delete": "Ջնջել",
+  "addCategory": "Ավելացնել կատեգորիա",
+  "categoryAdded": "Կատեգորիան ավելացվեց",
+  "categoryError": "Չհաջողվեց ավելացնել կատեգորիան",
+  "deleteCategoryConfirm": "Ջնջե՞լ կատեգորիան",
+  "categoryDeleted": "Կատեգորիան ջնջվեց",
+  "deleteCategoryError": "Չհաջողվեց ջնջել կատեգորիան",
+  "deleteConfirm": "Ջնջե՞լ բյուջեն",
+  "deleted": "Բյուջեն ջնջվեց",
+  "deleteError": "Չհաջողվեց ջնջել բյուջեն"
+},
+"categories": {
+  "food": "Սնունդ",
+  "transport": "Տրանսպորտ",
+  "shopping": "Գնումներ",
+  "bills": "Հաշիվներ",
+  "health": "Առողջություն",
+  "education": "Կրթություն",
+  "entertainment": "Ժամանց",
+  "travel": "Ճամփորդություն",
+  "savings": "Խնայողություն",
+  "other": "Այլ"
+},
+"goals": {
+  "title": "Նպատակներ",
+  "description": "Ստեղծեք խնայողական նպատակներ, գումար ավելացրեք ձեր հաշիվներից և հետևեք առաջընթացին",
+  "overview": "Նպատակների ընդհանուր պատկեր",
+  "create": "Ստեղծել նպատակ",
+  "createDescription": "Նպատակի անունն ու նպատակային գումարը պարտադիր են, վերջնաժամկետը՝ ընտրովի",
+  "created": "Նպատակը հաջողությամբ ստեղծվեց",
+  "createError": "Չհաջողվեց ստեղծել նպատակը",
+  "createFunctionMissing": "Store-ում createGoal ֆունկցիան բացակայում է",
+  "fillRequired": "Լրացրեք պարտադիր դաշտերը",
+  "name": "Նպատակի անվանում",
+  "namePlaceholder": "Նոր նոթբուք",
+  "target": "Նպատակային գումար",
+  "saved": "Կուտակված",
+  "deadline": "Վերջնաժամկետ",
+  "noDeadline": "Վերջնաժամկետ նշված չէ",
+  "currency": "Արժույթ",
+  "progress": "Առաջընթաց",
+  "remaining": "Մնացել է",
+  "addMoney": "Ավելացնել գումար",
+  "addMoneyDescription": "Ընտրեք նպատակը, ընտրեք հաշիվը և փոխանցեք գումար",
+  "selectGoal": "Ընտրեք նպատակը",
+  "fromAccount": "Որ հաշվից",
+  "selectAccount": "Ընտրեք հաշիվը",
+  "amount": "Գումար",
+  "moneyAdded": "Գումարը հաջողությամբ ավելացվեց նպատակին",
+  "addMoneyError": "Չհաջողվեց ավելացնել գումարը",
+  "insufficientFunds": "Հաշվում բավարար գումար չկա",
+  "updateFunctionMissing": "Store-ում updateGoal ֆունկցիան բացակայում է",
+  "selectedGoal": "Ընտրված նպատակ",
+  "selectedAccount": "Ընտրված հաշիվ",
+  "yourGoals": "Ձեր նպատակները",
+  "sectionSubtitle": "Հետևեք կուտակումներին և վերջնաժամկետներին",
+  "noGoals": "Նպատակներ չկան",
+  "emptyDescription": "Ստեղծեք ձեր առաջին նպատակը խնայողությունները սկսելու համար",
+  "totalTarget": "Ընդհանուր նպատակային գումար",
+  "totalSaved": "Ընդհանուր կուտակված",
+  "completedCount": "Ավարտված նպատակներ",
+  "overdueCount": "Ժամկետանց նպատակներ",
+  "completed": "Ավարտված",
+  "overdue": "Ժամկետանց",
+  "active": "Ակտիվ",
+  "archiveSuggestion": "Կարող եք արխիվացնել այս նպատակը",
+  "deadlineSuggestion": "Համակարգը կարող է առաջարկել նոր վերջնաժամկետ",
+  "category": "Խնայողություն",
+  "goalNote": "Նպատակ"
+},
+
+  "reports": {
+  "title": "Հաշվետվություն",
+  "incomeVsExpense": "Տես քո եկամուտներն ու ծախսերը ընտրված ժամանակահատվածում",
+  "exportCsv": "Excel / CSV",
+  "exportPdf": "PDF",
+  "periodStart": "Սկիզբ",
+  "periodEnd": "Վերջ",
+  "selectedRange": "Ընտրված միջակայք",
+  "noData": "Այս ժամանակահատվածում տվյալներ չկան",
+  "noDataDescription": "Փոխիր ժամանակահատվածը կամ ավելացրու նոր գործարքներ, որպեսզի հաշվետվությունը լցվի։",
+  "income": "Եկամուտ",
+  "expense": "Ծախս",
+  "balance": "Մնացորդ",
+  "accounts": "Հաշիվներ",
+  "categoryDistribution": "Կատեգորիաների բաշխում",
+  "clickCategory": "Սեղմիր կատեգորիայի վրա",
+  "noExpenseCategories": "Այս ժամանակահատվածում ծախսային կատեգորիաներ չկան",
+  "drillDown": "Մանրամասն դիտում",
+  "selectCategory": "Ընտրիր կատեգորիա",
+  "categoryLabel": "Կատեգորիա",
+  "drillDownHint": "Սեղմիր որևէ կատեգորիայի վրա, որպեսզի բացվի տվյալ գործարքների ցանկը։",
+  "noCategoryTransactions": "Այս կատեգորիայով գործարքներ չկան։",
+  "overviewList": "Ընդհանուր ցուցակ",
+  "transactionsCount": "Գործարքներ",
+  "date": "Ամսաթիվ",
+  "type": "Տեսակ",
+  "category": "Կատեգորիա",
+  "amount": "Գումար",
+  "uncategorized": "Առանց կատեգորիայի",
+  "expenseShare": "ընդհանուր ծախսից",
+  "details": "Մանրամասն",
+  "exportPeriodRequired": "Արտահանելու համար ընտրիր ժամանակահատված"
+},
+
+  "notifications": {
+  "title": "Ծանուցումներ",
+  "subtitle": "Տես քո վերջին ծանուցումները, նշիր որպես կարդացած կամ անցիր համապատասխան բաժին։",
+  "refresh": "Թարմացնել",
+  "markAllAsRead": "Նշել բոլորը որպես կարդացած",
+  "total": "Ընդհանուր",
+  "unread": "Չկարդացած",
+  "noNotifications": "Ծանուցումներ չկան",
+  "emptyDescription": "Կարևոր իրադարձությունների դեպքում այստեղ կստեղծվեն ծանուցումներ։",
+  "defaultTitle": "Ծանուցում",
+  "defaultMessage": "Նոր ծանուցում կա համակարգում։",
+  "new": "Նոր",
+  "noDate": "Ամսաթիվ չկա",
+  "openSection": "Բացել բաժինը",
+  "markAsRead": "Նշել որպես կարդացած",
+  "delete": "Ջնջել"
+},
+
+  "settings": {
+    "title": "Կարգավորումներ",
+    "exportPDF": "Արտահանել PDF",
+    "exportExcel": "Արտահանել Excel",
+    "backup": "Ներբեռնել JSON պահուստային տարբերակը",
+    "restore": "Վերականգնել JSON ֆայլից",
+    "changePassword": "Փոխել գաղտնաբառը"
+  },
+
+  "profile": {
+  "title": "Անձնական տվյալներ",
+  "noUserTitle": "Օգտատեր չի գտնվել",
+  "noUserDescription": "Այս բաժինը հասանելի է միայն մուտք գործած օգտատիրոջ համար։",
+  "avatarAlt": "Նկար",
+  "noEmail": "Email նշված չէ",
+  "personalInfo": "Անձնական տվյալներ",
+  "viewAndEdit": "Դիտել և խմբագրել",
+  "name": "Անուն",
+  "namePlaceholder": "Մուտքագրիր անունը",
+  "nameRequired": "Անունը պարտադիր է",
+  "email": "Email",
+  "emailPlaceholder": "Մուտքագրիր email-ը",
+  "emailRequired": "Email-ը պարտադիր է",
+  "emailInvalid": "Մուտքագրված email-ը վավեր չէ",
+  "emailAlreadyUsed": "Այս email-ը արդեն օգտագործվում է այլ օգտատիրոջ կողմից",
+  "emailChangeHint": "Email-ի փոփոխության դեպքում կարող է ուղարկվել հաստատման նամակ։",
+  "savedWithVerificationHint": "Տվյալները պահպանվեցին։ Email-ի փոփոխության դեպքում կարող է պահանջվել հաստատում։",
+  "age": "Տարիք",
+  "agePlaceholder": "Մուտքագրիր տարիքը",
+  "ageInvalid": "Տարիքը պետք է լինի վավեր դրական թիվ",
+  "maritalStatus": "Ամուսնական կարգավիճակ",
+  "maritalStatusPlaceholder": "Օրինակ՝ Ամուսնացած / Ազատ",
+  "currency": "Արժույթ",
+  "save": "Պահպանել",
+  "saveError": "Չհաջողվեց պահպանել պրոֆիլի տվյալները",
+  "accountOverview": "Ընդհանուր տվյալներ",
+  "privateDataOnly": "Միայն քո անձնական տվյալները",
+  "photoSection": "Պրոֆիլի նկար",
+  "photoRequirements": "Ընդունվում են JPG, PNG, WEBP ֆորմատները մինչև 3MB չափով։",
+  "uploadPhoto": "Վերբեռնել նկար",
+  "imageInvalidFormat": "Նկարի ֆորմատը ընդունելի չէ",
+  "imageTooLarge": "Նկարի չափը չպետք է գերազանցի {{size}}MB",
+  "imageUpdated": "Պրոֆիլի նկարը թարմացվեց",
+  "imageUpdateError": "Չհաջողվեց թարմացնել պրոֆիլի նկարը"
+},
+
+  "common": {
+    "save": "Պահպանել",
+    "cancel": "Չեղարկել",
+    "yes": "Այո",
+    "no": "Ոչ",
+    "search": "Փնտրել",
+    "add": "Ավելացնել",
+    "edit": "Խմբագրել",
+    "remove": "Ջնջել",
+    "loading": "Բեռնվում է..."
+  },
+
+  "validation": {
+    "invalidEmailPhone": "Մուտքագրեք վավեր էլ. փոստի հասցե կամ հեռախոսահամար",
+    "minAge": "Տարիքը պետք է լինի 0 կամ ավելի"
+  },
+
+  "notificationsystem": {
+    "budgetExceeded": "«{{category}}» կատեգորիայի բյուջեն գերազանցվել է",
+    "lowBalance": "Ցածր մնացորդ․ մնացել է {{amount}} {{currency}}",
+    "recurringPosted": "Կրկնվող եկամուտը գրանցվել է․ {{source}}",
+    "goalAtRisk": "«{{goal}}» նպատակը վտանգված է"
+  }
+}
+

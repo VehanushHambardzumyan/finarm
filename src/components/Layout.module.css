@@ -1,0 +1,37 @@
+
+.container {
+  max-width: 1200px;
+  margin: 2.5rem auto 1.5rem auto;
+  padding: 2.2rem 2rem 2.5rem 2rem;
+  background: #fff;
+  border-radius: 12px;
+  color: #1a202c;
+  box-shadow: 0 2px 12px rgba(16,30,54,0.07);
+  min-height: 70vh;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 1.1rem 0.5rem 1.5rem 0.5rem;
+    margin: 1rem 0;
+    border-radius: 7px;
+  }
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7rem;
+  }
+  .container {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

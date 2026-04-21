@@ -1,0 +1,667 @@
+.accounts-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #0f172a;
+}
+
+.accounts-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(59, 130, 246, 0.03)), #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.06);
+}
+
+.accounts-eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2563eb;
+}
+
+.accounts-title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.accounts-subtitle {
+  margin: 12px 0 0;
+  max-width: 620px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.accounts-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.accounts-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.accounts-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+}
+
+.accounts-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+}
+
+.accounts-stat-value {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.accounts-stat-label {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.accounts-top-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 16px;
+}
+
+.accounts-panel {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.05);
+}
+
+.accounts-panel-header {
+  margin-bottom: 16px;
+}
+
+.accounts-panel-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.accounts-panel-text {
+  margin: 6px 0 0;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.accounts-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.accounts-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.accounts-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.accounts-input {
+  width: 100%;
+  padding: 14px 15px;
+  border-radius: 14px;
+  border: 1px solid #dbe3ef;
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.accounts-input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.accounts-primary-btn,
+.accounts-secondary-btn {
+  border: none;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.accounts-primary-btn {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+}
+
+.accounts-secondary-btn {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+.accounts-primary-btn:hover,
+.accounts-secondary-btn:hover {
+  transform: translateY(-1px);
+}
+
+.accounts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accounts-section-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.accounts-section-text {
+  margin: 6px 0 0;
+  color: #64748b;
+}
+
+.accounts-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.accounts-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.06);
+}
+
+.accounts-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #cbd5e1, #e2e8f0);
+}
+
+.accounts-card.cash::before {
+  background: linear-gradient(90deg, #22c55e, #86efac);
+}
+
+.accounts-card.bank::before {
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
+}
+
+.accounts-card.debit::before {
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+}
+
+.accounts-card.credit::before {
+  background: linear-gradient(90deg, #f59e0b, #fcd34d);
+}
+
+.accounts-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.accounts-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  background: #f8fafc;
+}
+
+.accounts-card-badge {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.accounts-card-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.accounts-card-balance {
+  margin: 8px 0 0;
+  font-size: 26px;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.accounts-card-balance span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.accounts-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.accounts-card-type {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.accounts-live-badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  background: #ecfdf5;
+  color: #15803d;
+}
+
+.accounts-empty-state {
+  min-height: 220px;
+  border-radius: 24px;
+  border: 1px dashed #cbd5e1;
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.accounts-empty-icon {
+  font-size: 32px;
+}
+
+.accounts-empty-mini {
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  padding: 16px;
+  text-align: center;
+  color: #475569;
+}
+
+/* ── Hero actions ── */
+.accounts-hero-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* ── Form panel ── */
+.accounts-form-panel {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+}
+
+.accounts-form-title {
+  margin: 0 0 20px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.accounts-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  align-items: end;
+}
+
+.accounts-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.accounts-form-group label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.accounts-form-group input,
+.accounts-form-group select {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #dbe3ef;
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.accounts-form-group input:focus,
+.accounts-form-group select:focus {
+  outline: none;
+  border-color: #60a5fa;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(37,99,235,0.1);
+}
+
+/* ── Section ── */
+.accounts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accounts-section-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+/* ── Card improvements ── */
+.accounts-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.accounts-card-body h4 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.accounts-card-type {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.accounts-card-balance {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-top: 4px;
+}
+
+.accounts-card-credit {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* ── Card actions row ── */
+.accounts-card-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.accounts-edit-btn,
+.accounts-archive-btn,
+.accounts-delete-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.18s;
+}
+
+.accounts-edit-btn {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.accounts-archive-btn {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.accounts-delete-btn {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.accounts-edit-btn:hover    { background: #dbeafe; }
+.accounts-archive-btn:hover { background: #fde68a; }
+.accounts-delete-btn:hover  { background: #fee2e2; }
+
+/* ── Archived section toggle ── */
+.accounts-toggle-archived {
+  border: 1px dashed #94a3b8;
+  border-radius: 14px;
+  padding: 12px 18px;
+  background: transparent;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.18s;
+}
+
+.accounts-toggle-archived:hover { background: #f8fafc; }
+
+.accounts-archived .accounts-card {
+  opacity: 0.65;
+}
+
+/* ── Empty state ── */
+.accounts-empty {
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 20px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.accounts-empty div { font-size: 32px; }
+
+/* ── Modal overlay ── */
+.accounts-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.48);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.accounts-modal {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 24px 64px rgba(15, 23, 42, 0.18);
+}
+
+.accounts-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.accounts-modal-header h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.accounts-close-btn {
+  border: none;
+  background: #f1f5f9;
+  border-radius: 10px;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: #475569;
+}
+
+.accounts-modal .accounts-form {
+  grid-template-columns: 1fr;
+}
+
+.accounts-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+/* savings card accent */
+.accounts-card.savings::before {
+  background: linear-gradient(90deg, #6366f1, #a78bfa);
+}
+
+@media (max-width: 1100px) {
+  .accounts-top-grid,
+  .accounts-cards-grid,
+  .accounts-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .accounts-hero,
+  .accounts-panel {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .accounts-hero {
+    flex-direction: column;
+  }
+
+  .accounts-title {
+    font-size: 26px;
+  }
+
+  .accounts-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Transfer Section */
+.accounts-transfer-section {
+  background: #fff;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+}
+
+.accounts-transfer-hint {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 12px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.accounts-transfer-hint p { margin: 0; }
+
+.accounts-transfer-form { margin-top: 16px; }
+
+.accounts-transfer-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.accounts-transfer-row .accounts-form-group {
+  flex: 1;
+  min-width: 160px;
+}
+
+.accounts-transfer-arrow {
+  font-size: 22px;
+  color: #2563eb;
+  padding-bottom: 8px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.accounts-transfer-btn {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Disabled button style */
+.accounts-secondary-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
