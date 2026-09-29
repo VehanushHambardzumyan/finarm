@@ -373,7 +373,10 @@
   "notes": "Note",
   "notesPlaceholder": "Additional note",
   "categoryRequired": "Category is required",
-  "accountRequired": "Please select an account"
+  "accountRequired": "Please select an account",
+  "selectCategory": "Select category",
+  "transferAccountsRequired": "Select both transfer accounts",
+  "transferAccountsDifferent": "Transfer accounts must be different"
 },
   "income": {
     "addIncome": "Add Income",
@@ -584,6 +587,16 @@
   "currency": "Currency",
   "save": "Save",
   "saveError": "Failed to save profile data",
+  "role": "Role",
+  "phone": "Phone",
+  "changePassword": "Change password",
+  "currentPassword": "Current password",
+  "newPassword": "New password",
+  "passwordChanged": "Password changed",
+  "wrongCurrentPassword": "Current password is incorrect",
+  "passwordChangeError": "Failed to change password",
+  "avatarTooLarge": "Image must be smaller than 2MB",
+  "changeAvatar": "Change photo",
   "accountOverview": "Account overview",
   "privateDataOnly": "Only your personal data",
   "photoSection": "Profile photo",

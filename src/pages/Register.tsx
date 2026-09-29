@@ -30,6 +30,7 @@ export default function Register() {
   const navigate = useNavigate();
   const useStore = useAppStore();
   const registerUser = useStore((st) => st.register);
+  const login = useStore((st) => st.login);
   const isLoading = useStore((st) => st.isAuthLoading);
 
   const { register, handleSubmit, formState, setError } = useForm<Form>({
@@ -46,6 +47,12 @@ export default function Register() {
 
     const res = await registerUser(payload);
     if (res.ok) {
+      const identifier = payload.email || payload.phone || "";
+      const loginRes = await login(identifier, payload.password);
+      if (loginRes.ok) {
+        navigate("/dashboard");
+        return;
+      }
       navigate("/login");
     } else {
       setError("root", { message: res.message || "auth.registrationFailed" });
@@ -138,7 +145,9 @@ export default function Register() {
 
           {formState.errors.root && (
             <div className={s["login-error-box"]}>
-              {t(formState.errors.root.message || "auth.registrationFailed")}
+              {formState.errors.root.message?.startsWith("auth.")
+                ? t(formState.errors.root.message)
+                : formState.errors.root.message || t("auth.registrationFailed")}
             </div>
           )}
 

@@ -86,12 +86,15 @@ export const createAuthSlice: StateCreator<AuthSlice> = (set) => ({
     } catch (error: any) {
       set({ isAuthLoading: false });
 
-      const message =
-        error?.code === "NETWORK_ERROR"
-          ? "auth.serverUnavailable"
-          : "auth.registrationFailed";
+      if (error?.code === 'NETWORK_ERROR') {
+        return { ok: false, message: 'auth.serverUnavailable', code: error.code };
+      }
 
-      return { ok: false, message, code: error?.code };
+      return {
+        ok: false,
+        message: error?.message || 'auth.registrationFailed',
+        code: error?.code,
+      };
     }
   },
 

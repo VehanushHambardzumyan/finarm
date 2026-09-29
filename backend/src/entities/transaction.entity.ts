@@ -60,7 +60,7 @@ export class Transaction {
   @Column({ type: 'varchar', nullable: true })
   category: string | null;
 
-  @Column({ type: 'varchar', nullable: true })
+  @Column({ name: 'notes', type: 'varchar', nullable: true })
   note: string | null;
 
   @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
